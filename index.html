@@ -13,7 +13,7 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
-  <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+ <!--  <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"> -->
   <link rel="stylesheet" type="text/css" href="./src/style/style.css">
 </head>
 <body>
@@ -68,20 +68,33 @@
    </div>
   </div>
    <div class="product-info">
-     <h3>sneaker company</h3>
+    <section class="info">
+        <h3>sneaker company</h3>
      <h1> Fall Limited Edition Sneakers</h1>
      <p>
         These low-profile sneakers are your perfect casual wear companion. Featuring a 
   durable rubber outer sole, they’ll withstand everything the weather can offer.
      </p>
-     <section class="price=product">
+     <section class="price-product">
        <div id="price">
           <div id="new-price">$125.00</div>
          <div id="descont">50%</div>
        </div>
-       <div id="price-previous">$250.00
-       </div>
+       <div id="price-previous">$250.00</div>
+       
      </section>
+    </section>
+   
+     <section class="buy-product">
+         <div class="set-amount">
+           <button id="btnLess" class="btn"><img src="./images/icon-minus.svg"></button>
+           <span id="amount">0</span>
+           <button id="btnPlus" class="btn"><img src="./images/icon-plus.svg"></button>
+         </div>
+         <div class="button-add-container">
+           <button class="add-cart"> <img src="./images/icon-cart.svg" id="cart-img" > <span>Add to Cart</span> </button>
+         </div>
+       </section>
    </div>
  </section>
  </main>
@@ -106,7 +119,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<!--       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> -->
       <script type="text/javascript" src="./src/js/App.js"></script>
   </body>
 

@@ -13,3 +13,5 @@ buttonCloseNav.addEventListener('click',()=>{
 cartButton.addEventListener('click',()=>{
 	cartShop.classList.toggle('cart-desactive')
 })
+
+console.log('bla')
