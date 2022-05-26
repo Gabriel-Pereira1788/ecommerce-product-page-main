@@ -3,6 +3,10 @@ const buttonCloseNav=document.querySelector('.closeNav')
 const cartButton = document.querySelector('.cartButton')
 const cartShop=document.querySelector('.cart-shop')
 const header=document.querySelector('header')
+const imgMain=document.querySelector('#img-click')
+const productGallery=document.querySelector('.product-gallery')
+const closeBtn=document.querySelector('.close-btn')
+
 buttonNav.addEventListener('click',()=>{
 	header.classList.add('navOpen')
 })
@@ -14,4 +18,11 @@ cartButton.addEventListener('click',()=>{
 	cartShop.classList.toggle('cart-desactive')
 })
 
-console.log('bla')
+imgMain.addEventListener('click',()=>{
+	
+	productGallery.classList.toggle('gallery-desactive')
+})
+
+closeBtn.addEventListener('click',()=>{
+	productGallery.classList.toggle('gallery-desactive')
+})

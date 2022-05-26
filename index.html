@@ -1,107 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  
-  <title>Frontend Mentor | E-commerce product page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
- <!--  <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"> -->
-  <link rel="stylesheet" type="text/css" href="./src/style/style.css">
-</head>
-<body>
+    <title>Frontend Mentor | E-commerce product page</title>
 
-<header >
-  <div class='navigatorShop'>
-    <button class="buttonNav">
-      <img src="./images/icon-menu.svg">
-    </button>
-    <div class="logo"><img src="./images/logo.svg"></div>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <!--  <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="./src/style/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navigatorShop">
+        <button class="buttonNav">
+          <img src="./images/icon-menu.svg" />
+        </button>
+        <div class="logo"><img src="./images/logo.svg" /></div>
 
-  <nav>
-    <div class="navList">
-           <button class="closeNav"><img src="./images/icon-close.svg"></button>
-       <ul class='list'>
-      <li>Collections</li>
-      <li>Men</li>
-      <li>Women</li>
-      <li>About</li>
-      <li> Contact</li>
-    </ul>
-    </div>
-   <div class="mobileNavBackground"></div>
-  </nav>
-  </div>
-  <div class="user">
-     <div class="cartButton"><img src="./images/icon-cart.svg"></div>
-  <div > <img src="./images/image-avatar.png" id="avatar-img"></div>
-  </div> 
-</header>
- <div class="separator"><hr></div>
- <section class="cart-shop cart-desactive" >
-  <h3>Cart</h3>
-   <div class="container">
-     <p>img</p>
-     <div class="productInformation">
-       <h3 class="name-product"></h3>
-       <p class="price"></p>
-     </div>
-   </div>
-   <button class="checkout">Checkout</button>
- </section>
- <main>
-    <section class="product">
-  <div class="product-imgs">
-    <img src="./images/image-product-1.jpg" class="img-main">
-   <div class="product-thumbs">
-     <img src="./images/image-product-1-thumbnail.jpg">
-     <img src="./images/image-product-2-thumbnail.jpg">
-     <img src="./images/image-product-3-thumbnail.jpg">
-     <img src="./images/image-product-4-thumbnail.jpg">
-   </div>
-  </div>
-   <div class="product-info">
-    <section class="info">
-        <h3>sneaker company</h3>
-     <h1> Fall Limited Edition Sneakers</h1>
-     <p>
-        These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
-     </p>
-     <section class="price-product">
-       <div id="price">
-          <div id="new-price">$125.00</div>
-         <div id="descont">50%</div>
-       </div>
-       <div id="price-previous">$250.00</div>
-       
-     </section>
+        <nav>
+          <div class="navList">
+            <button class="closeNav">
+              <img src="./images/icon-close.svg" />
+            </button>
+            <ul class="list">
+              <li>Collections</li>
+              <li>Men</li>
+              <li>Women</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div class="mobileNavBackground"></div>
+        </nav>
+      </div>
+      <div class="user">
+        <div class="cartButton"><img src="./images/icon-cart.svg" /></div>
+        <div><img src="./images/image-avatar.png" id="avatar-img" /></div>
+      </div>
+    </header>
+    <div class="separator"><hr /></div>
+    <section class="cart-shop cart-desactive">
+      <h3>Cart</h3>
+      <div class="container">
+        <p>img</p>
+        <div class="productInformation">
+          <h3 class="name-product"></h3>
+          <p class="price"></p>
+        </div>
+      </div>
+      <button class="checkout">Checkout</button>
     </section>
-   
-     <section class="buy-product">
-         <div class="set-amount">
-           <button id="btnLess" class="btn"><img src="./images/icon-minus.svg"></button>
-           <span id="amount">0</span>
-           <button id="btnPlus" class="btn"><img src="./images/icon-plus.svg"></button>
-         </div>
-         <div class="button-add-container">
-           <button class="add-cart"> <img src="./images/icon-cart.svg" id="cart-img" > <span>Add to Cart</span> </button>
-         </div>
-       </section>
-   </div>
- </section>
- </main>
+    <main>
 
+      <section class="product">
+
+        <div class="product-imgs">
+          <img src="./images/image-product-1.jpg" class="img-main" id="img-click" />
+          <div class="product-thumbs">
+            <div class="img-thumb">
+              <img src="./images/image-product-1-thumbnail.jpg" />
+            </div>
+            <div class="img-thumb">
+              <img src="./images/image-product-2-thumbnail.jpg" />
+            </div>
+            <div class="img-thumb">
+              <img src="./images/image-product-3-thumbnail.jpg" />
+            </div>
+            <div class="img-thumb">
+              <img src="./images/image-product-4-thumbnail.jpg" />
+            </div>
+          </div>
+        </div>
+          <div class="product-gallery gallery-desactive">
+          <div class="gallery">
+            <div class="main-img-container">
+              <button class="close-btn"><img src="./images/icon-close.svg"></button>
+              <button class="prev-btn btn-gallery"><img src="./images/icon-previous.svg"></button>
+            <img src="./images/image-product-1.jpg" class="img-main" />
+            <button class='next-btn btn-gallery'><img src="./images/icon-next.svg"></button>
+            </div>
+               <div class="product-thumbs">
+            <div class="img-thumb">
+              <img src="./images/image-product-1-thumbnail.jpg" />
+            </div>
+            <div class="img-thumb">
+              <img src="./images/image-product-2-thumbnail.jpg" />
+            </div>
+            <div class="img-thumb">
+              <img src="./images/image-product-3-thumbnail.jpg" />
+            </div>
+            <div class="img-thumb">
+              <img src="./images/image-product-4-thumbnail.jpg" />
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="product-info">
+          <section class="info">
+            <h3>sneaker company</h3>
+            <h1>Fall Limited Edition Sneakers</h1>
+            <p>
+              These low-profile sneakers are your perfect casual wear companion.
+              Featuring a durable rubber outer sole, they’ll withstand
+              everything the weather can offer.
+            </p>
+            <section class="price-product">
+              <div id="price">
+                <div id="new-price">$125.00</div>
+                <div id="descont">50%</div>
+              </div>
+              <div id="price-previous">$250.00</div>
+            </section>
+          </section>
+
+          <section class="buy-product">
+            <div class="set-amount">
+              <button id="btnLess" class="btn">
+                <img src="./images/icon-minus.svg" />
+              </button>
+              <span id="amount">0</span>
+              <button id="btnPlus" class="btn">
+                <img src="./images/icon-plus.svg" />
+              </button>
+            </div>
+            <div class="button-add-container">
+              <button class="add-cart">
+                <img src="./images/icon-cart.svg" id="cart-img" />
+                <span>Add to Cart</span>
+              </button>
+            </div>
+          </section>
+        </div>
+
+      </section>
+
+    </main>
   
 
-<!--   Sneaker Company
+    <!--   Sneaker Company
 
   Fall Limited Edition Sneakers
 
@@ -114,14 +168,18 @@
 
   0
   Add to cart -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-<!--       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> -->
-      <script type="text/javascript" src="./src/js/App.js"></script>
-  </body>
 
-</body>
+<!--     <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+<!--     <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script> -->
+    <script type="text/javascript" src="./src/js/App.js"></script>
+  </body>
 </html>
