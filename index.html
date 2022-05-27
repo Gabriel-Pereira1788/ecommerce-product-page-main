@@ -52,21 +52,34 @@
         </nav>
       </div>
       <div class="user">
-        <div class="cartButton"><img src="./images/icon-cart.svg" /></div>
+        <div class="cartButton">
+          <img src="./images/icon-cart.svg" />
+          <div id="product-adds" class="cart-desactive">3</div>
+
+        </div>
         <div><img src="./images/image-avatar.png" id="avatar-img" /></div>
       </div>
     </header>
     <div class="separator"><hr /></div>
     <section class="cart-shop cart-desactive">
       <h3>Cart</h3>
-      <div class="container">
-        <p>img</p>
-        <div class="productInformation">
-          <h3 class="name-product"></h3>
-          <p class="price"></p>
+      <hr>
+      <div class="container-cart empty">
+
+        <div id="empty-message">
+          <p>Your cart is empty.</p>
         </div>
-      </div>
-      <button class="checkout">Checkout</button>
+      <!--   <img src="./images/image-product-1-thumbnail.jpg" class="image-cart">
+        <div class="productInformation">
+          <h3 class="name-product"> Fall Limited Edition sneakers</h3>
+          <div class="price-cart">
+            <span id="price-product">$125,00</span>
+            <span id="number-product">x 3</span>
+            <span id="price-finish">$375</span>
+          </div>
+        </div>
+ -->      </div>
+      <button class="checkout btn-cart">Checkout</button>
     </section>
     <main>
 
@@ -75,7 +88,7 @@
         <div class="product-imgs">
           <img src="./images/image-product-1.jpg" class="img-main" id="img-click" />
           <div class="product-thumbs">
-            <div class="img-thumb">
+           <!--  <div class="img-thumb">
               <img src="./images/image-product-1-thumbnail.jpg" />
             </div>
             <div class="img-thumb">
@@ -86,7 +99,7 @@
             </div>
             <div class="img-thumb">
               <img src="./images/image-product-4-thumbnail.jpg" />
-            </div>
+            </div> -->
           </div>
         </div>
           <div class="product-gallery gallery-desactive">
@@ -98,7 +111,7 @@
             <button class='next-btn btn-gallery'><img src="./images/icon-next.svg"></button>
             </div>
                <div class="product-thumbs">
-            <div class="img-thumb">
+           <!--  <div class="img-thumb">
               <img src="./images/image-product-1-thumbnail.jpg" />
             </div>
             <div class="img-thumb">
@@ -109,7 +122,7 @@
             </div>
             <div class="img-thumb">
               <img src="./images/image-product-4-thumbnail.jpg" />
-            </div>
+            </div> -->
           </div>
           </div>
         </div>
@@ -123,25 +136,25 @@
               everything the weather can offer.
             </p>
             <section class="price-product">
-              <div id="price">
+             <!--  <div id="price">
                 <div id="new-price">$125.00</div>
                 <div id="descont">50%</div>
               </div>
-              <div id="price-previous">$250.00</div>
+              <div id="price-previous">$250.00</div> -->
             </section>
           </section>
 
           <section class="buy-product">
             <div class="set-amount">
-              <button id="btnLess" class="btn">
+              <button id="buttonMinus" class="btn">
                 <img src="./images/icon-minus.svg" />
               </button>
               <span id="amount">0</span>
-              <button id="btnPlus" class="btn">
+              <button id="buttonPlus" class="btn">
                 <img src="./images/icon-plus.svg" />
               </button>
             </div>
-            <div class="button-add-container">
+            <div class="button-add-container btn-cart">
               <button class="add-cart">
                 <img src="./images/icon-cart.svg" id="cart-img" />
                 <span>Add to Cart</span>
@@ -180,6 +193,6 @@
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script> -->
-    <script type="text/javascript" src="./src/js/App.js"></script>
+    <script type="module" src="./src/js/App.js"></script>
   </body>
 </html>
