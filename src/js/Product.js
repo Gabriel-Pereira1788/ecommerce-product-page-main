@@ -58,7 +58,7 @@ class Product {
 		);
 		const setImage = findImages("images-fullSize", element.dataset.title);
 		img.setAttribute("src", setImage);
-		// this.imgsMain.forEach((img) => img.setAttribute("src", setImage));
+
 	}
 	settedElement(element) {
 		if (element != null) {
