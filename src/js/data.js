@@ -12,7 +12,7 @@ const dataProducts = [
 		price: 250,
 		descont:true,
 		valueDescont:50,
-		info: "Estas sapatilhas de perfil baixo são o seu companheiro de roupa casual perfeito. Com uma sola exterior de borracha durável, eles resistirão a tudo o que o clima pode oferecer",
+		info: "These low-profile sneakers are your perfect casual wear companion. With a durable rubber outsole, they'll stand up to anything the weather can throw at you.",
 		"image-main": "./images/image-product-1.jpg",
 		"images-fullSize": [
 			"./images/image-product-1.jpg",
@@ -44,8 +44,5 @@ export const findImages = (imageArr, lookingFor) => {
 	});
 	return newArr;
 };
-// const indexArr=dataProducts[0]['images-thumbs'].findIndex(item => item.includes('image-product-1'))
 
 export default dataProducts;
-
-// console.log(indexArr)
